@@ -2,3 +2,12 @@
 html{
     scroll-behavior: smooth;
 }
+#logo {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  #logo {
+    display: none;
+  }
+}
