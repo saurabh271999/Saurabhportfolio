@@ -31,7 +31,7 @@ const ProgressBar = () => {
                 
               <div
                 className='bg-blue-600 h-full text-white text-xs font-medium text-right pr-2 transition-all duration-300 ease-in-out'
-                style={{ width: `${skill.level}%` }}
+               
               >
                 {skill.level}%
               </div>
