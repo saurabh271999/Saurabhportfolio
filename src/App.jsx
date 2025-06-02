@@ -4,7 +4,7 @@ import Home from './Components/Home'
 import Navbar from './Components/Navbar'
 import About from './Components/About'
 import Skills from './Components/Skills'
-import CursorGlow from './Components/Cursor'
+// import CursorGlow from './Components/Cursor'
 // import Experience from './Components/Experience'
 import Project from './Components/Project'
 import Education from './Components/Education'
@@ -34,7 +34,7 @@ const App = () => {
      </div>
       
        
-      <CursorGlow />
+     
       
     </div>
     

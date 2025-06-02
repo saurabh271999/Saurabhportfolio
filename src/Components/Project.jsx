@@ -1,6 +1,9 @@
 import React from 'react';
 import Weather from '../assets/Weather.png'
 import Cashify from '../assets/Cashify.png'
+import redCafe from '../assets/redCafe.png'
+import TODO from '../assets/TODO.png'
+import Cleartrip from '../assets/cleartrip.png'
 
 const projectData = [
   {
@@ -15,36 +18,30 @@ const projectData = [
     GithubLink: 'https://github.com/your-repo/netflix-clone',
     LiveLink: 'https://mytripapp.netlify.app/',
     description: 'Clone of Netflix with TMDB API and user authentication.',
-    image: Cashify
+    image: Cleartrip
   },
   {
     name: 'Shopify App',
     GithubLink: 'https://github.com/your-repo/chat-app',
-    LiveLink: 'https://chat-app-live.com',
+    LiveLink: 'https://buyeasymobile.netlify.app/',
     description: 'A real-time chat application built with Socket.io and React.',
     image: Cashify
   },
   {
-    name: 'Shopify App',
+    name: 'Restraunt App',
     GithubLink: 'https://github.com/your-repo/chat-app',
-    LiveLink: 'https://chat-app-live.com',
+    LiveLink: 'https://redcafee.netlify.app/',
     description: 'A real-time chat application built with Socket.io and React.',
-    image: Cashify
+    image: redCafe
   },
   {
-    name: 'Shopify App',
+    name: 'To-do App',
     GithubLink: 'https://github.com/your-repo/chat-app',
-    LiveLink: 'https://chat-app-live.com',
+    LiveLink: 'https://task-todo-listt.netlify.app/',
     description: 'A real-time chat application built with Socket.io and React.',
-    image: Cashify
+    image: TODO
   },
-  {
-    name: 'Shopify App',
-    GithubLink: 'https://github.com/your-repo/chat-app',
-    LiveLink: 'https://chat-app-live.com',
-    description: 'A real-time chat application built with Socket.io and React.',
-    image: Cashify
-  },
+
 ];
 
 const Project = () => {
