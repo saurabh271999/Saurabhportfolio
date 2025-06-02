@@ -29,7 +29,12 @@ const ProgressBar = () => {
             <h1 className='text-gray-600 '>{skill.level}%</h1>
             <div className='w-full bg-[#1E293B] rounded-full h-1 overflow-hidden'>
                 
-              
+              <div
+                className='bg-blue-600 h-full  text-xs font-medium text-right pr-2 transition-all duration-300 ease-in-out'
+                style={{ width: `${skill.level}%` }}
+              >
+                {skill.level}
+              </div>
             </div>
           </div>
         ))}
