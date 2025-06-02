@@ -31,8 +31,8 @@ const educationData = [
 
 const Education = () => {
   return (
-    <div className="min-h-screen bg-[#0F1729] flex flex-col items-center px-4">
-      <h1 className="text-white text-5xl font-bold mt-10">Education</h1>
+    <div className="min-h-screen pb-10 bg-[#0F1729] flex flex-col items-center px-4">
+      <h1 className="text-white text-5xl font-bold mt-10 border-b-2 inline-block border-blue-500">Education</h1>
 
       {educationData.map((data, index) => (
         <div

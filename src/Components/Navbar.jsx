@@ -15,10 +15,10 @@ const Navbar = () => {
          <a href="#Home"> <li className="hover:text-blue-100 font-medium cursor-pointer">Home</li></a>
           <a href="#About"><li className="hover:text-blue-100 font-medium cursor-pointer">About</li></a>
          <a href="#Skills"> <li className="hover:text-blue-100 font-medium cursor-pointer">Skills</li></a>
-          <li className="hover:text-blue-100 font-medium cursor-pointer">Experience</li>
+          {/* <li className="hover:text-blue-100 font-medium cursor-pointer">Experience</li> */}
          <a href="#Projects"> <li className="hover:text-blue-100 font-medium cursor-pointer">Projects</li></a>
-          <li className="hover:text-blue-100 font-medium cursor-pointer">Achievements</li>
-          <li className="hover:text-blue-100 font-medium cursor-pointer">Contact</li>
+         <a href="#Education"> <li className="hover:text-blue-100 font-medium cursor-pointer">Education</li></a>
+         <a href="#Contact "> <li className="hover:text-blue-100 font-medium cursor-pointer">Contact</li></a>
         </ul>
 
      

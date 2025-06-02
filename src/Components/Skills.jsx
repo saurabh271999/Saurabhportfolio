@@ -13,7 +13,7 @@ const ProgressBar = () => {
   return (
     <>
       <section className='h-full bg-[#0F1729] flex justify-center'>
-        <h1 className='text-white text-5xl font-bold mt-10'>Skills</h1>
+        <h1 className='text-white text-5xl font-bold mt-10 border-b-2 inline-block border-blue-500'>Skills</h1>
       </section>
 
       <div className='bg-[#0F1729] flex flex-wrap justify-center gap-10 p-10'>

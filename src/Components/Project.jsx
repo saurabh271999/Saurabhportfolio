@@ -50,7 +50,7 @@ const projectData = [
 const Project = () => {
   return (
     <div className="min-h-screen bg-[#131C2F] flex flex-col items-center px-4">
-      <h1 className="text-white text-5xl font-bold mt-10">Projects</h1>
+      <h1 className="text-white text-5xl font-bold mt-10 border-b-2 inline-block border-blue-500">Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 w-full max-w-6xl mb-10">
         {projectData.map((data, index) => (
           <div

@@ -8,6 +8,7 @@ import CursorGlow from './Components/Cursor'
 // import Experience from './Components/Experience'
 import Project from './Components/Project'
 import Education from './Components/Education'
+import Contacts from './Components/Contacts'
 const App = () => {
   return (
     <div>
@@ -27,6 +28,9 @@ const App = () => {
      </div>
      <div id='Education'>
       <Education/>
+     </div>
+      <div id='Contact'>
+      <Contacts/>
      </div>
       
        
