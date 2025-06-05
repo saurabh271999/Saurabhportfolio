@@ -1,21 +1,39 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const MobileMenu = () => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const toggleMenu = () => setOpen(!open);
 
   return (
-    <div className="md:hidden w-full">
-      {/* Burger Icon */}
-      <div onClick={toggleMenu} className="p-2 text-white">
-        {open ? <FaTimes size={24} /> : <FaBars size={24} />}
-      </div>
+    <>
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full bg-[#0F1729] z-50">
+        <div  className=" max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+          {/* Logo */}
+          <span id='logo' className="max700  font-bold text-2xl">Sourabh</span>
 
-      {/* Mobile Menu (relative so it pushes content) */}
+          {/* Desktop Menu */}
+          <ul id='desktop-div' className="max700 md:flex gap-8 text-white text-lg">
+            <li><a href="#Home" className="hover:text-blue-100 font-medium">Home</a></li>
+            <li><a href="#About" className="hover:text-blue-100 font-medium">About</a></li>
+            <li><a href="#Skills" className="hover:text-blue-100 font-medium">Skills</a></li>
+            <li><a href="#Projects" className="hover:text-blue-100 font-medium">Projects</a></li>
+            <li><a href="#Education" className="hover:text-blue-100 font-medium">Education</a></li>
+            <li><a href="#Contact" className="hover:text-blue-100 font-medium">Contact</a></li>
+          </ul>
+
+          {/* Mobile Icon */}
+          <div onClick={toggleMenu} className="md:hidden cursor-p text-white">
+            {open ? <FaTimes size={24} /> : <FaBars size={24} />}
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu (below navbar) */}
       {open && (
-        <div className="w-full bg-[#0a192f] text-white flex flex-col items-center space-y-6 py-8 z-40">
-          <h2 className='text-white font-bold text-3xl'>Sourabh</h2>
+        <div className="md:hidden w-full bg-[#0a192f] text-white flex flex-col items-center space-y-6 py-8 pt-24 z-40 relative">
+          <h2 className="text-white font-bold text-3xl">Sourabh</h2>
           <a href="#Home" onClick={toggleMenu} className="hover:text-blue-400">Home</a>
           <a href="#About" onClick={toggleMenu} className="hover:text-blue-400">About</a>
           <a href="#Skills" onClick={toggleMenu} className="hover:text-blue-400">Skills</a>
@@ -24,31 +42,7 @@ const MobileMenu = () => {
           <a href="#Contact" onClick={toggleMenu} className="hover:text-blue-400">Contact</a>
         </div>
       )}
-    </div>
-  );
-};
-
-const Navbar = () => {
-  return (
-    <nav className="fixed top-0 left-0 w-full bg-[#0F1729] z-50">
-      <div className="max-w-7xl mx-auto flex px-4 py-4  items-center justify-between">
-        {/* Logo */}
-        <span id='logo' className="text-white font-bold text-2xl">Sourabh</span>
-
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-white text-lg absolute left-1/2 transform -translate-x-1/2">
-          <a href="#Home"><li className="hover:text-blue-100 font-medium cursor-pointer">Home</li></a>
-          <a href="#About"><li className="hover:text-blue-100 font-medium cursor-pointer">About</li></a>
-          <a href="#Skills"><li className="hover:text-blue-100 font-medium cursor-pointer">Skills</li></a>
-          <a href="#Projects"><li className="hover:text-blue-100 font-medium cursor-pointer">Projects</li></a>
-          <a href="#Education"><li className="hover:text-blue-100 font-medium cursor-pointer">Education</li></a>
-          <a href="#Contact"><li className="hover:text-blue-100 font-medium cursor-pointer">Contact</li></a>
-        </ul>
-
-        {/* Mobile Menu Icon */}
-        <MobileMenu />
-      </div>
-    </nav>
+    </>
   );
 };
 

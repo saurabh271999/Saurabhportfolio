@@ -9,13 +9,17 @@ import Skills from './Components/Skills'
 import Project from './Components/Project'
 import Education from './Components/Education'
 import Contacts from './Components/Contacts'
+
 const App = () => {
   return (
     <div>
+      
       <Navbar/>
+      
       <div id='Home'>
         <Home/>
       </div>
+      
       <div id='About'>
          <About/>
       </div>
